@@ -48,10 +48,6 @@ c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\f
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\idlestate.obj
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\kinectaudiostream.obj
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\lab3.obj
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\lab4.obj
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\lab5.obj
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\lab6.obj
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\lab7.obj
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\lazerbeam.obj
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\leaphands.obj
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\obstacleavoidancescenario.obj
@@ -62,9 +58,69 @@ c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\p
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\physicsdrawer.obj
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\debug\bge.exe
 c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\debug\bge.pdb
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\bge.tlog\cl.command.1.tlog
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\bge.tlog\cl.read.1.tlog
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\bge.tlog\cl.write.1.tlog
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\bge.tlog\link.command.1.tlog
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\bge.tlog\link.read.1.tlog
-c:\users\thelads\google drive\workspace\games engines\lab 3\bge-lab3\bge\debug\bge.tlog\link.write.1.tlog
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\attackingstate.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\box.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\buddha.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\camera.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\capsule.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\content.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\cubetest.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\cylinder.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\exception.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\flockingscenario.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\fountaineffect.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\fpscontroller.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\game.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\gamecomponent.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\ground.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\idlestate.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\kinectaudiostream.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\kinematicmotionstate.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\lab3.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\lazerbeam.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\leaphands.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\linedrawer.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\main.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\model.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\modeltest.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\motionstate.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\obstacleavoidancescenario.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\params.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\particle.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\particleeffect.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\pathfollowingscenario.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\person2.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\physicscamera.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\physicscontroller.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\physicsdrawer.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\physicsfactory.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\physicsgame1.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\riftcontroller.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\route.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\scenario.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\scenegraphgame.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\skeletonmapper.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\snoweffect.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\soundsystem.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\sphere.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\state.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\steerable3dcontroller.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\steeringcontroler.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\steeringgame.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\texturedcube.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\transform.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\triangletest.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\utils.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\vectordrawer.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\vrgame2.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\xboxcontroller.obj
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\vc120.idb
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\vc120.pdb
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\debug\bge.pdb
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\debug\bge.exe
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\bge.tlog\cl.command.1.tlog
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\bge.tlog\cl.read.1.tlog
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\bge.tlog\cl.write.1.tlog
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\bge.tlog\link.command.1.tlog
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\bge.tlog\link.read.1.tlog
+c:\users\keith\desktop\collegeyear4\game engines 1\bge\bge\debug\bge.tlog\link.write.1.tlog

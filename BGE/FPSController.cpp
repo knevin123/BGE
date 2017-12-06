@@ -1,21 +1,41 @@
 #include "FPSController.h"
 #include "Game.h"
 #include "Params.h"
+#include "Utils.h"
 
 using namespace BGE;
 
 FPSController::FPSController(void)
 {
+	gravity = glm::vec3(0, -9.8f, 0);
+	jumping = false;
 }
 
 bool FPSController::Initialise()
 {
-	transform->position = glm::vec3(0.0f, 50.0f, 100.0f);
 	return GameComponent::Initialise();
 }
 
 FPSController::~FPSController(void)
 {
+}
+
+void FPSController::Jump(float height, float duration)
+{
+	// Dont allow Double Jumping
+	if (jumping)
+	{
+		return;
+	}
+	jumping = true;
+	jumpTheta = 0.0f;
+	jumpHeight = height;
+	jumpDuration = duration;
+	jumpY = transform->position.y;
+
+	// For Physics Jumping use this instead
+	// See: http://math.stackexchange.com/questions/785375/calculate-initial-velocity-to-reach-height-y
+	transform->velocity.y = glm::sqrt(2.0f * glm::abs(gravity.y) * jumpHeight);
 }
 
 void FPSController::Update(float timeDelta)
@@ -49,9 +69,14 @@ void FPSController::Update(float timeDelta)
 		transform->Strafe(moveSpeed * timeDelta);
 	}
 
+	if (keyState[SDL_SCANCODE_J])
+	{
+		Jump(20, 2);
+	}
+
 	int x, y;
 	int midX, midY;
-	SDL_GetMouseState(&x,&y);
+	SDL_GetMouseState(&x, &y);
 	midX = Params::GetFloat("width") / 2;
 	midY = Params::GetFloat("height") / 2;
 	float yaw, pitch;
@@ -68,10 +93,34 @@ void FPSController::Update(float timeDelta)
 		transform->Pitch(pitch * scale);
 	}
 	SDL_WarpMouseInWindow(
-		Game::Instance()->GetMainWindow()
-		,midX
-		,midY
+		NULL
+		, midX
+		, midY
 		);
+
+	if (jumping)
+	{
+		transform->position.y = jumpY + (glm::sin(jumpTheta) * jumpHeight);
+		float thetaInc = (glm::pi<float>() / jumpDuration) * timeDelta;
+		jumpTheta += thetaInc;
+		if (jumpTheta > glm::pi<float>())
+		{
+			jumping = !jumping;
+			transform->position.y = jumpY;
+		}
+
+		// Or Physics Jumping...
+
+		/*
+		transform->velocity += gravity * timeDelta;
+		transform->position += transform->velocity * timeDelta;
+		if (transform->position.y < jumpY)
+		{
+		jumping = !jumping;
+		transform->position.y = jumpY;
+		}
+		*/
+	}
+
 	GameComponent::Update(timeDelta);
-	//Controller::Update(this, this->parent);
 }

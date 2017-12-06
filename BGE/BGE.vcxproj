@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -14,6 +14,7 @@
     <ProjectGuid>{07950736-E660-4602-A03B-F5799615B485}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>BGE</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -27,7 +28,7 @@
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -41,8 +42,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>..\Dependencies\LeapSDK\include;..\Dependencies\FMOD\inc;..\Dependencies\LibOVR\Include;..\Dependencies\SDL2-2.0.3\include;..\Dependencies\glew-1.10.0\include;..\Dependencies\glm-0.9.4.3\glm;..\Dependencies\SDL_ttf;..\Dependencies\bullet3\src;..\Dependencies\Kinect\v2.0\inc;..\Dependencies\Speech\v11.0\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>..\Dependencies\LeapSDK\lib\x86;..\Dependencies\Speech\v11.0\Include;..\Dependencies\FMOD\lib;..\Dependencies\LibOVR\Lib\Win32\VS2013;..\Dependencies\SDL2-2.0.3\lib\x86;..\Dependencies\SDL_ttf\VisualC\Win32\Release;..\Dependencies\glew-1.10.0\lib\Release\Win32;..\Dependencies\bullet3\lib;..\Dependencies\Kinect\v2.0\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\LeapSDK\include;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\FMOD\inc;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\LibOVR\Include;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\SDL2-2.0.3\include;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\glew-1.10.0\include;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\glm-0.9.4.3\glm;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\SDL_ttf;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\bullet3\src;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\Kinect\v2.0\inc;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\Speech\v11.0\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\LeapSDK\lib\x86;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\Speech\v11.0\Include;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\FMOD\lib;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\LibOVR\Lib\Win32\VS2013;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\SDL2-2.0.3\lib\x86;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\SDL_ttf\VisualC\Win32\Release;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\glew-1.10.0\lib\Release\Win32;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\bullet3\lib;C:\Users\Keith\Desktop\collegeyear4\game engines 1\BGE\Dependencies\Kinect\v2.0\Lib\x86;$(LibraryPath)</LibraryPath>
     <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -99,16 +100,22 @@
     </CustomBuildStep>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Assignment.cpp" />
     <ClCompile Include="AttackingState.cpp" />
     <ClCompile Include="Buddha.cpp" />
     <ClCompile Include="Capsule.cpp" />
     <ClCompile Include="FlockingScenario.cpp" />
     <ClCompile Include="FountainEffect.cpp" />
+    <ClCompile Include="GravityController.cpp" />
+    <ClCompile Include="HingeController.cpp" />
     <ClCompile Include="IdleState.cpp" />
     <ClCompile Include="KinectAudioStream.cpp" />
     <ClCompile Include="Lab3.cpp" />
+    <ClCompile Include="Lab4.cpp" />
+    <ClCompile Include="Lab6.cpp" />
     <ClCompile Include="LazerBeam.cpp" />
     <ClCompile Include="LeapHands.cpp" />
+    <ClCompile Include="MyAssignment.cpp" />
     <ClCompile Include="ObstacleAvoidanceScenario.cpp" />
     <ClCompile Include="Particle.cpp" />
     <ClCompile Include="ParticleEffect.cpp" />
@@ -157,16 +164,22 @@
     <ClCompile Include="XBoxController.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Assignment.h" />
     <ClInclude Include="AttackingState.h" />
     <ClInclude Include="Buddha.h" />
     <ClInclude Include="Capsule.h" />
     <ClInclude Include="FlockingScenario.h" />
     <ClInclude Include="FountainEffect.h" />
+    <ClInclude Include="GravityController.h" />
+    <ClInclude Include="HingeController.h" />
     <ClInclude Include="IdleState.h" />
     <ClInclude Include="KinectAudioStream.h" />
     <ClInclude Include="Lab3.h" />
+    <ClInclude Include="Lab4.h" />
+    <ClInclude Include="Lab6.h" />
     <ClInclude Include="LazerBeam.h" />
     <ClInclude Include="LeapHands.h" />
+    <ClInclude Include="MyAssignment.h" />
     <ClInclude Include="ObstacleAvoidanceScenario.h" />
     <ClInclude Include="Particle.h" />
     <ClInclude Include="ParticleEffect.h" />

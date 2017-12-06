@@ -46,8 +46,67 @@ void Lab3::Update(float timeDelta)
 	{
 		ship2->transform->position -= ship2->transform->look * speed * timeDelta;
 	}
+	if (keyState[SDL_SCANCODE_LEFT])
+	{
+		ship2->transform->Yaw(timeDelta*speed*speed);
+	}
+	if (keyState[SDL_SCANCODE_RIGHT])
+	{
+		ship2->transform->Yaw(-timeDelta*speed*speed);
+	}
+
+	//movement for ship1
+	if (keyState[SDL_SCANCODE_U])
+	{
+		ship1->transform->position += ship1->transform->look * speed * timeDelta;
+	}
+	if (keyState[SDL_SCANCODE_J])
+	{
+		ship1->transform->position -= ship1->transform->look * speed * timeDelta;
+	}
+	if (keyState[SDL_SCANCODE_H])
+	{
+		ship1->transform->Yaw(timeDelta*speed*speed);
+	}
+	if (keyState[SDL_SCANCODE_L])
+	{
+		ship1->transform->Yaw(-timeDelta*speed*speed);
+	}
 	elapsed += timeDelta;
 
+	//Check Distance to ship 2
+	glm::vec3 toShip2 = ship2->transform->position - ship1->transform->position;
+	if (glm::length(toShip2) < 5)
+	{
+		PrintText("IN RANGE");
+	}
+	else{
+		PrintText("NOT IN RANGE");
+	}
 
+	//check id infront or behind
+	toShip2 = glm::normalize(toShip2);
+	float dot = glm::dot(toShip2, ship1->transform->look);
+	if (dot < 0){
+		PrintText("Behind");
+	}
+	else
+	{
+		PrintText("not behind");
+	}
+	//check if in the FOB of half 45 degrees
+	float angle = glm::acos(dot);
+	float halffov = glm::radians(45.0f) / 2.0f;
+	if (angle < halffov)
+	{
+		if (elapsed > timeToFire)
+		{
+			shared_ptr<LazerBeam> lazer = make_shared<LazerBeam>();
+			lazer->transform->position = ship1->transform->position;
+			lazer->transform->look = ship1->transform->look;
+			Attach(lazer);
+			elapsed = 0.0f;
+		}
+	}
 	Game::Update(timeDelta);
 }

@@ -212,6 +212,24 @@
     <ClCompile Include="Lab3.cpp">
       <Filter>Labs</Filter>
     </ClCompile>
+    <ClCompile Include="Lab4.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab6.cpp">
+      <Filter>Labs</Filter>
+    </ClCompile>
+    <ClCompile Include="MyAssignment.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="GravityController.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="HingeController.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Assignment.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -378,6 +396,24 @@
     </ClInclude>
     <ClInclude Include="Lab3.h">
       <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab4.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="Lab6.h">
+      <Filter>Labs</Filter>
+    </ClInclude>
+    <ClInclude Include="MyAssignment.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GravityController.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="HingeController.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Assignment.h">
+      <Filter>Engine</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

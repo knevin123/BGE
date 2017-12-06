@@ -273,6 +273,21 @@ shared_ptr<PhysicsController> PhysicsFactory::CreateGroundPhysics()
 	return groundComponent;
 }
 
+
+shared_ptr<PhysicsController> PhysicsFactory::CreateTree(glm::vec3 position,float x)
+{
+	float width = 2;
+	float height = x;
+	float length = 2;
+
+	//// A Ball and socket
+	shared_ptr<PhysicsController> box1 = CreateBox(width, height, length, glm::vec3(position.x, height-2, position.z), glm::quat());
+	shared_ptr<PhysicsController> box2 = CreateBox(4, 4, 4, glm::vec3(position.x, height+2, position.y), glm::quat());
+
+
+	return box1;
+}
+
 shared_ptr<PhysicsController> PhysicsFactory::CreateRandomObject(glm::vec3 point, glm::quat q, glm::vec3 scale)
 {
 	vector<string> names;
